@@ -116,8 +116,7 @@ h3 {
 }
 
 .logo-icon { 
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: white; 
+  background: transparent;
   width: 42px; 
   height: 42px; 
   border-radius: 12px; 
@@ -1092,4 +1091,11 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
