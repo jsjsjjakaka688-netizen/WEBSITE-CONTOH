@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>PT STORE | demo_Pertanian</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="demo_pertanian.css">
+</head>
+<body>
+  <!-- Floating Contact Button -->
+  <a href="#" class="floating-contact" id="floatingContact">
+    <i class="fas fa-headset"></i>
+  </a>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">🌾</div>
+        <span>Agro<span class="logo-highlight">Sejahtera</span></span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#home">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak" class="nav-contact">Hubungi Kami</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#artikel">Artikel</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Hubungi Kami</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Pertanian" onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/1043/1920/1080';">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="700">
+          <div class="hero-badge">
+            <i class="fas fa-leaf"></i> 
+            <span>Pertanian Berkelanjutan</span>
+          </div>
+          <h1>Solusi <span class="text-highlight">Pertanian Modern</span> untuk Indonesia Maju</h1>
+          <p class="hero-desc">Kami menyediakan produk pertanian berkualitas, teknologi modern, dan pendampingan untuk meningkatkan hasil panen Anda.</p>
+          <div class="hero-cta">
+            <a href="#produk" class="btn btn-primary"><i class="fas fa-seedling"></i> Lihat Produk</a>
+            <a href="#kontak" class="btn btn-outline-light"><i class="fas fa-phone-alt"></i> Konsultasi Gratis</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-number" data-target="500">0</span><span class="stat-label">Petani Mitra</span></div>
+            <div class="stat"><span class="stat-number" data-target="50">0</span><span class="stat-label">Jenis Produk</span></div>
+            <div class="stat"><span class="stat-number" data-target="15">0</span><span class="stat-label">Tahun Pengalaman</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PRODUK UNGGULAN Section -->
+    <section id="produk" class="produk section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge"><i class="fas fa-box"></i> Produk Unggulan</span>
+          <h2>Hasil Tani <span class="text-highlight">Berkualitas Tinggi</span></h2>
+          <p>Kami menyediakan berbagai produk pertanian premium langsung dari petani lokal.</p>
+        </div>
+        <div class="produk-grid">
+          <!-- Produk 1 -->
+          <div class="produk-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="produk-badge unggulan">Unggulan</div>
+            <div class="produk-img">
+              <img src="https://images.pexels.com/photos/4110256/pexels-photo-4110256.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Beras Organik Premium" onerror="this.src='https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/225/400/300';">
+            </div>
+            <div class="produk-content">
+              <h3>Beras Organik Premium</h3>
+              <p class="produk-category"><i class="fas fa-tag"></i> Padi-padian</p>
+              <p class="produk-desc">Beras organik bebas pestisida, pulen dan wangi alami.</p>
+              <div class="produk-footer">
+                <span class="produk-price">Rp 18.500/kg</span>
+                <button class="btn-produk produk-order-btn" data-produk="Beras Organik Premium">Pesan <i class="fab fa-whatsapp"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Produk 2 -->
+          <div class="produk-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="produk-badge promo">Promo</div>
+            <div class="produk-img">
+              <img src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sayuran Hidroponik" onerror="this.src='https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?w=400&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/292/400/300';">
+            </div>
+            <div class="produk-content">
+              <h3>Sayuran Hidroponik</h3>
+              <p class="produk-category"><i class="fas fa-tag"></i> Sayuran Segar</p>
+              <p class="produk-desc">Sayuran segar hasil budidaya hidroponik tanpa pestisida.</p>
+              <div class="produk-footer">
+                <span class="produk-price">Rp 12.000/pack</span>
+                <button class="btn-produk produk-order-btn" data-produk="Sayuran Hidroponik">Pesan <i class="fab fa-whatsapp"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Produk 3 -->
+          <div class="produk-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="produk-img">
+              <img src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Buah Segar Pilihan" onerror="this.src='https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=400&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/1080/400/300';">
+            </div>
+            <div class="produk-content">
+              <h3>Buah Segar Pilihan</h3>
+              <p class="produk-category"><i class="fas fa-tag"></i> Buah-buahan</p>
+              <p class="produk-desc">Aneka buah lokal segar dipetik langsung dari kebun.</p>
+              <div class="produk-footer">
+                <span class="produk-price">Mulai Rp 15.000/kg</span>
+                <button class="btn-produk produk-order-btn" data-produk="Buah Segar Pilihan">Pesan <i class="fab fa-whatsapp"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Produk 4 -->
+          <div class="produk-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="produk-badge baru">Baru</div>
+            <div class="produk-img">
+              <img src="https://images.pexels.com/photos/1459342/pexels-photo-1459342.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pupuk Organik" onerror="this.src='https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/116/400/300';">
+            </div>
+            <div class="produk-content">
+              <h3>Pupuk Organik Premium</h3>
+              <p class="produk-category"><i class="fas fa-tag"></i> Sarana Pertanian</p>
+              <p class="produk-desc">Pupuk organik berkualitas untuk hasil panen maksimal.</p>
+              <div class="produk-footer">
+                <span class="produk-price">Rp 25.000/kg</span>
+                <button class="btn-produk produk-order-btn" data-produk="Pupuk Organik Premium">Pesan <i class="fab fa-whatsapp"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG KAMI Section -->
+    <section id="tentang" class="tentang section-padding bg-light">
+      <div class="container">
+        <div class="tentang-grid">
+          <div class="tentang-image" data-aos="fade-right">
+            <img src="https://images.pexels.com/photos/2387723/pexels-photo-2387723.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Petani Indonesia" class="main-img" onerror="this.src='https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?w=600&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/1043/600/500';">
+            <div class="experience-badge">
+              <span class="exp-years">15+</span>
+              <span class="exp-text">Tahun Pengalaman</span>
+            </div>
+          </div>
+          <div class="tentang-content" data-aos="fade-left">
+            <span class="section-badge"><i class="fas fa-tractor"></i> Tentang Kami</span>
+            <h2>Mitra Terpercaya <span class="text-highlight">Petani Indonesia</span></h2>
+            <p class="tentang-text">Agro Sejahtera hadir untuk mendukung kemajuan pertanian Indonesia melalui produk berkualitas, teknologi modern, dan pendampingan berkelanjutan.</p>
+            <div class="tentang-features">
+              <div class="tentang-feature">
+                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                <div>
+                  <h4>Produk Berkualitas</h4>
+                  <p>Benih unggul, pupuk organik, dan hasil tani premium</p>
+                </div>
+              </div>
+              <div class="tentang-feature">
+                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                <div>
+                  <h4>Teknologi Modern</h4>
+                  <p>Penerapan teknologi pertanian terkini untuk hasil optimal</p>
+                </div>
+              </div>
+              <div class="tentang-feature">
+                <div class="feature-icon"><i class="fas fa-check"></i></div>
+                <div>
+                  <h4>Pendampingan Ahli</h4>
+                  <p>Konsultasi gratis dengan tim agronomi berpengalaman</p>
+                </div>
+              </div>
+            </div>
+            <a href="#kontak" class="btn btn-primary"><i class="fas fa-users"></i> Gabung Jadi Mitra</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN Section -->
+    <section class="keunggulan section-padding">
+      <div class="container">
+        <div class="keunggulan-grid">
+          <div class="keunggulan-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="keunggulan-icon"><i class="fas fa-truck"></i></div>
+            <h3>Pengiriman Cepat</h3>
+            <p>Produk segar langsung dikirim ke lokasi Anda dalam 24 jam.</p>
+          </div>
+          <div class="keunggulan-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="keunggulan-icon"><i class="fas fa-certificate"></i></div>
+            <h3>Bersertifikat</h3>
+            <p>Produk organik bersertifikat resmi dan terjamin kualitasnya.</p>
+          </div>
+          <div class="keunggulan-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="keunggulan-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <h3>Harga Petani</h3>
+            <p>Harga langsung dari petani, lebih murah dan menguntungkan.</p>
+          </div>
+          <div class="keunggulan-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="keunggulan-icon"><i class="fas fa-headset"></i></div>
+            <h3>Support 24/7</h3>
+            <p>Tim support siap membantu kapan pun Anda butuhkan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTIKEL & TIPS Section -->
+    <section id="artikel" class="artikel section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge"><i class="fas fa-newspaper"></i> Artikel & Tips</span>
+          <h2>Informasi <span class="text-highlight">Seputar Pertanian</span></h2>
+          <p>Dapatkan tips dan trik pertanian terkini dari para ahli.</p>
+        </div>
+        <div class="artikel-grid">
+          <!-- Artikel 1 -->
+          <div class="artikel-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="artikel-img">
+              <img src="https://images.pexels.com/photos/1459339/pexels-photo-1459339.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tips Bertani" onerror="this.src='https://images.unsplash.com/photo-1628352089352-06244a83b2da?w=400&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/135/400/250';">
+              <span class="artikel-category">Tips</span>
+            </div>
+            <div class="artikel-content">
+              <div class="artikel-meta">
+                <span><i class="far fa-calendar"></i> 10 Apr 2026</span>
+                <span><i class="far fa-eye"></i> 2.5k views</span>
+              </div>
+              <h3>5 Cara Meningkatkan Hasil Panen Padi di Musim Kemarau</h3>
+              <p>Strategi jitu menghadapi musim kemarau untuk tetap panen melimpah.</p>
+              <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Artikel 2 -->
+          <div class="artikel-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="artikel-img">
+              <img src="https://images.pexels.com/photos/1000057/pexels-photo-1000057.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pupuk Organik" onerror="this.src='https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/116/400/250';">
+              <span class="artikel-category">Panduan</span>
+            </div>
+            <div class="artikel-content">
+              <div class="artikel-meta">
+                <span><i class="far fa-calendar"></i> 8 Apr 2026</span>
+                <span><i class="far fa-eye"></i> 1.8k views</span>
+              </div>
+              <h3>Panduan Lengkap Membuat Pupuk Kompos Sendiri di Rumah</h3>
+              <p>Ubah limbah dapur menjadi pupuk berkualitas untuk tanaman Anda.</p>
+              <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Artikel 3 -->
+          <div class="artikel-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="artikel-img">
+              <img src="https://images.pexels.com/photos/1509582/pexels-photo-1509582.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hidroponik" onerror="this.src='https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?w=400&auto=format&fit=crop'; this.onerror=null; this.src='https://picsum.photos/id/292/400/250';">
+              <span class="artikel-category">Teknologi</span>
+            </div>
+            <div class="artikel-content">
+              <div class="artikel-meta">
+                <span><i class="far fa-calendar"></i> 5 Apr 2026</span>
+                <span><i class="far fa-eye"></i> 3.2k views</span>
+              </div>
+              <h3>Mengenal Hidroponik: Solusi Bertani di Lahan Sempit</h3>
+              <p>Teknik bercocok tanam modern tanpa tanah yang menguntungkan.</p>
+              <a href="#" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI Section -->
+    <section id="testimoni" class="testimoni section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge"><i class="fas fa-star"></i> Testimoni</span>
+          <h2>Apa Kata <span class="text-highlight">Petani Mitra</span></h2>
+          <p>Kisah sukses petani yang telah bergabung bersama kami.</p>
+        </div>
+        <div class="testimoni-grid">
+          <div class="testi-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Sejak bergabung dengan Agro Sejahtera, hasil panen saya meningkat 40%. Pupuk dan benihnya berkualitas!"</p>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Pak Hadi" class="testi-avatar" onerror="this.src='https://picsum.photos/id/64/100/100';">
+              <div>
+                <h4>Hadi Sucipto</h4>
+                <span>Petani Padi - Karawang</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Pendampingan dari tim ahli sangat membantu. Saya jadi paham cara bertani yang benar dan efisien."</p>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Bu Sumarni" class="testi-avatar" onerror="this.src='https://picsum.photos/id/91/100/100';">
+              <div>
+                <h4>Sumarni</h4>
+                <span>Petani Sayur - Bandung</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Pengiriman cepat dan produk selalu fresh. Bisnis sayuran saya jadi lebih lancar. Terima kasih!"</p>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Pak Budi" class="testi-avatar" onerror="this.src='https://picsum.photos/id/65/100/100';">
+              <div>
+                <h4>Budi Santoso</h4>
+                <span>Pengusaha Sayur - Bogor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI Section -->
+    <section class="galeri section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge"><i class="fas fa-images"></i> Galeri</span>
+          <h2>Momen <span class="text-highlight">Bersama Petani</span></h2>
+          <p>Kebersamaan kami dalam memajukan pertanian Indonesia.</p>
+        </div>
+        <div class="galeri-grid">
+          <div class="galeri-item" data-aos="zoom-in" data-aos-delay="0">
+            <img src="https://images.pexels.com/photos/2387723/pexels-photo-2387723.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Panen Padi" onerror="this.src='https://picsum.photos/id/1043/400/300';">
+          </div>
+          <div class="galeri-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sayuran Segar" onerror="this.src='https://picsum.photos/id/292/400/300';">
+          </div>
+          <div class="galeri-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://images.pexels.com/photos/2255935/pexels-photo-2255935.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Petani Bekerja" onerror="this.src='https://picsum.photos/id/135/400/300';">
+          </div>
+          <div class="galeri-item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="https://images.pexels.com/photos/2131784/pexels-photo-2131784.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hasil Panen" onerror="this.src='https://picsum.photos/id/1080/400/300';">
+          </div>
+          <div class="galeri-item" data-aos="zoom-in" data-aos-delay="400">
+            <img src="https://images.pexels.com/photos/1459342/pexels-photo-1459342.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Kebun" onerror="this.src='https://picsum.photos/id/116/400/300';">
+          </div>
+          <div class="galeri-item" data-aos="zoom-in" data-aos-delay="500">
+            <img src="https://images.pexels.com/photos/1000057/pexels-photo-1000057.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pertanian Modern" onerror="this.src='https://picsum.photos/id/225/400/300';">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK Section -->
+    <section id="kontak" class="kontak section-padding">
+      <div class="container">
+        <div class="kontak-card" data-aos="zoom-in-up">
+          <div class="kontak-content">
+            <h2>Mari Bermitra Bersama Kami</h2>
+            <p>Konsultasikan kebutuhan pertanian Anda dengan tim ahli kami. Gratis!</p>
+            <div class="kontak-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i> Jl. Pertanian Raya No. 88, Bogor, Jawa Barat</div>
+              <div class="info-item"><i class="fas fa-clock"></i> Senin - Sabtu | 08:00 - 17:00 WIB</div>
+              <div class="info-item"><i class="fab fa-whatsapp"></i> 0812-3456-7890</div>
+              <div class="info-item"><i class="fas fa-envelope"></i> info@agrosejahtera.id</div>
+            </div>
+          </div>
+          <div class="kontak-action">
+            <a href="#" class="btn-kontak-lg" id="mainContactBtn">
+              <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+            </a>
+            <span class="kontak-note"><i class="fas fa-headset"></i> Respon cepat dalam 5 menit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">🌾 Agro<span>Sejahtera</span></div>
+        <p>Solusi pertanian modern untuk Indonesia yang lebih maju dan sejahtera.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Navigasi</h4>
+          <a href="#home">Beranda</a>
+          <a href="#produk">Produk</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#artikel">Artikel</a>
+          <a href="#testimoni">Testimoni</a>
+        </div>
+        <div class="link-group">
+          <h4>Layanan</h4>
+          <a href="#kontak">Konsultasi</a>
+          <a href="#">Menjadi Mitra</a>
+          <a href="#">Pelatihan</a>
+          <a href="#">Syarat & Ketentuan</a>
+        </div>
+        <div class="link-group">
+          <h4>Produk</h4>
+          <a href="#">Benih Unggul</a>
+          <a href="#">Pupuk Organik</a>
+          <a href="#">Hasil Tani</a>
+          <a href="#">Alat Pertanian</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 PT STORE. All rights reserved.</p>
+        <p class="demo-badge">Demo Website by PT STORE</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="demo_pertanian.js"></script>
+</body>
+</html>

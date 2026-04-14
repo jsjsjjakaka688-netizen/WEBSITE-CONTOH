@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>PT STORE | web ayam</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="demo_ayam.css">
+</head>
+<body>
+  <!-- Floating Order Button -->
+  <a href="#" class="floating-order" id="floatingOrder">
+    <i class="fas fa-shopping-bag"></i>
+  </a>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">🍗</div>
+        <span>Geprek<span class="logo-highlight">Bawang</span></span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#home">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">Tentang</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#order" class="nav-order">Pesan Sekarang</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Beranda</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Tentang</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#order">Pesan Sekarang</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=1920&auto=format&fit=crop" alt="Ayam Geprek" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920'">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="700">
+          <div class="hero-badge">
+            <i class="fas fa-fire"></i> 
+            <span>#1 Pedas Se-Indonesia</span>
+          </div>
+          <h1>Ayam Geprek <span class="text-highlight">Sambal Bawang</span> Pedas Gurih Bikin Nagih</h1>
+          <p class="hero-desc">Nikmati kelezatan ayam geprek premium dengan sambal bawang khas yang menggugah selera. Dijamin ketagihan!</p>
+          <div class="hero-cta">
+            <a href="#menu" class="btn btn-primary"><i class="fas fa-utensils"></i> Lihat Menu</a>
+            <a href="#order" class="btn btn-secondary"><i class="fas fa-motorcycle"></i> Pesan Antar</a>
+          </div>
+          <div class="hero-features">
+            <div class="feature"><i class="fas fa-check-circle"></i> 100% Halal</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Bahan Premium</div>
+            <div class="feature"><i class="fas fa-check-circle"></i> Gratis Ongkir</div>
+          </div>
+        </div>
+        <div class="hero-visual" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&auto=format&fit=crop" alt="Ayam Geprek Sambal Bawang" class="hero-img" onerror="this.src='https://images.pexels.com/photos/12737880/pexels-photo-12737880.jpeg?auto=compress&cs=tinysrgb&w=600'">
+            <div class="price-tag">
+              <span class="price-from">Mulai</span>
+              <span class="price-value">15K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU Section -->
+    <section id="menu" class="menu section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge"><i class="fas fa-book-open"></i> Menu Kami</span>
+          <h2>Pilihan <span class="text-highlight">Menu Favorit</span></h2>
+          <p>Semua menu dibuat fresh setiap hari dengan bahan berkualitas terbaik.</p>
+        </div>
+        <div class="menu-grid">
+          <!-- Menu 1 - Original -->
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="menu-badge bestseller">Best Seller</div>
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&auto=format&fit=crop" alt="Ayam Geprek Original" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400'">
+            </div>
+            <div class="menu-content">
+              <h3>Ayam Geprek Original</h3>
+              <p>Ayam geprek dengan sambal bawang khas, lalapan segar, dan nasi putih hangat.</p>
+              <div class="menu-footer">
+                <span class="menu-price">Rp 18.000</span>
+                <button class="btn-order menu-order-btn" data-menu="Ayam Geprek Original">Pesan <i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Menu 2 - Mozarella -->
+<div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+  <div class="menu-badge promo">Promo</div>
+  <div class="menu-img">
+    <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&auto=format&fit=crop" alt="Ayam Geprek Mozarella" onerror="this.src='https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400'">
+  </div>
+  <div class="menu-content">
+    <h3>Ayam Geprek Mozarella</h3>
+    <p>Ayam geprek sambal bawang dengan topping keju mozarella meleleh yang creamy.</p>
+    <div class="menu-footer">
+      <span class="menu-price">Rp 25.000</span>
+      <button class="btn-order menu-order-btn" data-menu="Ayam Geprek Mozarella">Pesan <i class="fas fa-plus"></i></button>
+    </div>
+  </div>
+</div>
+          <!-- Menu 3 - Paket Hemat -->
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400&auto=format&fit=crop" alt="Paket Geprek Hemat" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400'">
+            </div>
+            <div class="menu-content">
+              <h3>Paket Geprek Hemat</h3>
+              <p>Ayam geprek + nasi + es teh manis. Cocok untuk makan siang hemat!</p>
+              <div class="menu-footer">
+                <span class="menu-price">Rp 22.000</span>
+                <button class="btn-order menu-order-btn" data-menu="Paket Geprek Hemat">Pesan <i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Menu 4 - Setan -->
+          <div class="menu-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="menu-badge spicy">Level Pedas</div>
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=400&auto=format&fit=crop" alt="Ayam Geprek Setan" onerror="this.src='https://images.pexels.com/photos/12737880/pexels-photo-12737880.jpeg?auto=compress&cs=tinysrgb&w=400'">
+            </div>
+            <div class="menu-content">
+              <h3>Ayam Geprek Setan</h3>
+              <p>Untuk pecinta pedas sejati! Sambal bawang extra pedas level 1-5.</p>
+              <div class="menu-footer">
+                <span class="menu-price">Rp 20.000</span>
+                <button class="btn-order menu-order-btn" data-menu="Ayam Geprek Setan">Pesan <i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT Section -->
+    <section id="about" class="about section-padding bg-light">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&auto=format&fit=crop" alt="Tentang Kami" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600'">
+          </div>
+          <div class="about-content" data-aos="fade-left">
+            <span class="section-badge"><i class="fas fa-store"></i> Tentang Kami</span>
+            <h2>Kisah di Balik <span class="text-highlight">Ayam Geprek Sambal Bawang</span></h2>
+            <p class="about-text">Berdiri sejak 2020, kami berkomitmen menyajikan ayam geprek berkualitas dengan cita rasa sambal bawang yang autentik. Setiap porsi dibuat dengan cinta dan bahan-bahan pilihan.</p>
+            <div class="about-features">
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Bahan Premium</h4>
+                  <p>Ayam segar pilihan & rempah berkualitas</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Sambal Autentik</h4>
+                  <p>Resep rahasia turun-temurun</p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Halal & Higienis</h4>
+                  <p>Bersertifikat halal & proses masak bersih</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY Section -->
+    <section id="gallery" class="gallery section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge"><i class="fas fa-images"></i> Galeri</span>
+          <h2>Momen <span class="text-highlight">Keberkahan</span></h2>
+          <p>Lihat keseruan dan kelezatan di balik dapur kami.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=400&auto=format&fit=crop" alt="Galeri 1" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400'">
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400&auto=format&fit=crop" alt="Galeri 2" onerror="this.src='https://images.pexels.com/photos/12737880/pexels-photo-12737880.jpeg?auto=compress&cs=tinysrgb&w=400'">
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1513104890130-7c749659a591?w=400&auto=format&fit=crop" alt="Galeri 3" onerror="this.src='https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400'">
+          </div>
+          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=400&auto=format&fit=crop" alt="Galeri 4" onerror="this.src='https://images.pexels.com/photos/12737880/pexels-photo-12737880.jpeg?auto=compress&cs=tinysrgb&w=400'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI Section -->
+    <section id="testimoni" class="testimoni section-padding bg-light">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-badge"><i class="fas fa-star"></i> Testimoni</span>
+          <h2>Apa Kata <span class="text-highlight">Pelanggan</span></h2>
+          <p>Mereka sudah merasakan kelezatan ayam geprek kami.</p>
+        </div>
+        <div class="testimoni-grid">
+          <div class="testi-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Sambalnya juara! Pedasnya nampol tapi nagih. Ayamnya juga gede dan juicy. Langganan tetap!"</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop" alt="Andi" class="testi-avatar" onerror="this.src='https://picsum.photos/id/64/100/100'">
+              <div>
+                <h4>Andi Pratama</h4>
+                <span>Food Blogger</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Mozarellanya melimpah banget! Worth it banget buat yang suka creamy. Pengiriman juga cepat."</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616c3211225?w=100&auto=format&fit=crop" alt="Sari" class="testi-avatar" onerror="this.src='https://picsum.photos/id/91/100/100'">
+              <div>
+                <h4>Sari Dewi</h4>
+                <span>Mahasiswa</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testi-text">"Level pedasnya bisa custom, saya pesen level 3 udah berasa banget. Mantap pokoknya!"</p>
+            <div class="testi-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop" alt="Rian" class="testi-avatar" onerror="this.src='https://picsum.photos/id/65/100/100'">
+              <div>
+                <h4>Rian Hidayat</h4>
+                <span>Karyawan Swasta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER Section -->
+    <section id="order" class="order section-padding">
+      <div class="container">
+        <div class="order-card" data-aos="zoom-in-up">
+          <div class="order-content">
+            <h2>Pesan Sekarang</h2>
+            <p>Hubungi kami via WhatsApp untuk pemesanan. Pesanan siap dalam 15-20 menit!</p>
+            <div class="order-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i> Jl. Raya Utama No. 123, Jakarta Selatan</div>
+              <div class="info-item"><i class="fas fa-clock"></i> Buka Setiap Hari | 10:00 - 22:00 WIB</div>
+              <div class="info-item"><i class="fab fa-whatsapp"></i> 0812-3456-7890</div>
+            </div>
+          </div>
+          <div class="order-action">
+            <a href="#" class="btn-order-lg" id="mainOrderBtn">
+              <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+            </a>
+            <span class="order-note"><i class="fas fa-motorcycle"></i> Gratis ongkir minimal 50K</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">🍗 Geprek<span>Bawang</span></div>
+        <p>Ayam geprek premium dengan sambal bawang khas yang menggugah selera.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Navigasi</h4>
+          <a href="#home">Beranda</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">Tentang</a>
+          <a href="#gallery">Galeri</a>
+        </div>
+        <div class="link-group">
+          <h4>Layanan</h4>
+          <a href="#order">Pesan Antar</a>
+          <a href="#">Catering</a>
+          <a href="#">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 PT STORE. All rights reserved.</p>
+        <p class="demo-badge">Demo Website by PT STORE</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="demo_ayam.js"></script>
+</body>
+</html>
