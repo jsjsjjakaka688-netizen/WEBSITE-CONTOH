@@ -131,7 +131,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const typingElement = document.querySelector('.typing-text');
 
 if (typingElement) {
-  const texts = ['Full-Stack Developer', 'Web Developer', 'UI/UX Designer'];
+  const texts = ['PT STORE', 'Full-Stack Developer', 'Web Developer', 'UI/UX Designer'];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
