@@ -1,4 +1,4 @@
-/* ==================== VARIABLES ==================== */
+/* VARIABLES */
 :root {
   --primary: #2e7d32;
   --primary-dark: #1b5e20;
@@ -22,7 +22,7 @@
   --border-radius-xl: 32px;
 }
 
-/* ==================== RESET & BASE ==================== */
+/* RESET & BASE */
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ body {
   padding: 0 32px;
 }
 
-/* ==================== TYPOGRAPHY ==================== */
+/* TYPOGRAPHY */
 h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.2;
@@ -93,7 +93,7 @@ h1, h2, h3, h4 {
   margin-bottom: 60px;
 }
 
-/* ==================== HEADER ==================== */
+/* HEADER */
 .header {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
@@ -209,7 +209,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-/* ==================== FLOATING CONTACT ==================== */
+/* FLOATING CONTACT */
 .floating-contact {
   position: fixed;
   bottom: 28px;
@@ -234,7 +234,7 @@ h1, h2, h3, h4 {
   background: var(--primary-dark);
 }
 
-/* ==================== HERO SECTION ==================== */
+/* HERO SECTION */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -509,7 +509,7 @@ h1, h2, h3, h4 {
   50% { transform: translateY(8px); }
 }
 
-/* ==================== PRODUK SECTION ==================== */
+/* PRODUK SECTION */
 .produk {
   padding: 100px 0;
   background: white;
@@ -628,7 +628,7 @@ h1, h2, h3, h4 {
   background: var(--primary-dark);
 }
 
-/* ==================== TENTANG SECTION ==================== */
+/* TENTANG SECTION */
 .tentang {
   padding: 100px 0;
   background: var(--bg-light);
@@ -714,7 +714,7 @@ h1, h2, h3, h4 {
   font-size: 0.9rem;
 }
 
-/* ==================== ARTIKEL SECTION ==================== */
+/* ARTIKEL SECTION */
 .artikel {
   padding: 100px 0;
   background: white;
@@ -804,7 +804,7 @@ h1, h2, h3, h4 {
   gap: 12px;
 }
 
-/* ==================== TESTIMONI SECTION ==================== */
+/* TESTIMONI SECTION */
 .testimoni {
   padding: 100px 0;
   background: var(--bg-light);
@@ -864,7 +864,7 @@ h1, h2, h3, h4 {
   font-size: 0.85rem;
 }
 
-/* ==================== KONTAK SECTION ==================== */
+/* KONTAK SECTION */
 .kontak {
   padding: 80px 0 100px;
   background: var(--primary-dark);
@@ -939,7 +939,7 @@ h1, h2, h3, h4 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* ==================== FOOTER ==================== */
+/* FOOTER */
 .footer {
   background: var(--bg-dark);
   color: white;
@@ -1037,7 +1037,7 @@ h1, h2, h3, h4 {
   color: var(--secondary);
 }
 
-/* ==================== RESPONSIVE ==================== */
+/* RESPONSIVE */
 @media (max-width: 1100px) {
   .produk-grid {
     grid-template-columns: repeat(2, 1fr);

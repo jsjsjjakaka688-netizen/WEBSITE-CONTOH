@@ -61,5 +61,5 @@ window.addEventListener('scroll', () => {
   if (overlay) overlay.style.transform = `translateY(${window.pageYOffset * 0.15}px)`;
 });
 
-console.log('%c🍗 GEPREK SAMBAL BAWANG — Premium Spicy Chicken', 'font-size: 16px; font-weight: bold; color: #d4a017;');
-console.log('%cPremium Demo by PT STORE', 'font-size: 12px; color: #888;');
+console.log('%c🍗 GEPREK SAMBAL BAWANG — Spicy Chicken', 'font-size: 16px; font-weight: bold; color: #d4a017;');
+console.log('%cDemo by PT STORE', 'font-size: 12px; color: #888;');

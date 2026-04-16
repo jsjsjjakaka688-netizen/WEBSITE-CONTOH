@@ -41,5 +41,5 @@ const heroStats = document.querySelector('.hero-stats'); if (heroStats) statsObs
 // Parallax
 window.addEventListener('scroll', () => { const overlay = document.querySelector('.hero-overlay'); if (overlay) overlay.style.transform = `translateY(${window.pageYOffset * 0.1}px)`; });
 
-console.log('%c🌾 Agro Sejahtera — Premium Agriculture', 'font-size: 16px; font-weight: bold; color: #2e7d32;');
-console.log('%cPremium Demo by PT STORE', 'font-size: 12px; color: #4a6a4a;');
+console.log('%c🌾 Agro Sejahtera — Agriculture', 'font-size: 16px; font-weight: bold; color: #2e7d32;');
+console.log('%cDemo by PT STORE', 'font-size: 12px; color: #4a6a4a;');

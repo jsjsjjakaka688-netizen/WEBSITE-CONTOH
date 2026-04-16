@@ -1,4 +1,4 @@
-// ==================== AOS INIT (OPTIMIZED) ====================
+// AOS INIT (OPTIMIZED)
 AOS.init({
   once: true,
   duration: 500,
@@ -7,7 +7,7 @@ AOS.init({
   startEvent: 'DOMContentLoaded'
 });
 
-// ==================== DEBOUNCE FUNCTION ====================
+// DEBOUNCE FUNCTION
 function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
@@ -20,7 +20,7 @@ function debounce(func, wait) {
   };
 }
 
-// ==================== HEADER SCROLL EFFECT ====================
+// HEADER SCROLL EFFECT
 const header = document.getElementById('mainHeader');
 let ticking = false;
 
@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ==================== MOBILE MENU TOGGLE ====================
+// MOBILE MENU TOGGLE
 const toggle = document.getElementById('mobileToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -54,7 +54,7 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
   });
 });
 
-// ==================== FAQ ACCORDION ====================
+// FAQ ACCORDION
 document.querySelectorAll('.faq-question').forEach(btn => {
   btn.addEventListener('click', function() {
     const faqItem = this.closest('.faq-item');
@@ -68,7 +68,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
-// ==================== WHATSAPP INTEGRATION ====================
+// WHATSAPP INTEGRATION
 const phone = '6281548282195';
 
 function waMessage(paket = '') {
@@ -108,11 +108,7 @@ document.querySelectorAll('.btn-paket').forEach(btn => {
   });
 });
 
-// CATATAN: Link "Kunjungi Website" di section Demo sekarang langsung mengarah ke
-// demo_ayam.html dan demo_pertanian.html (lihat href di index.html)
-// Jadi TIDAK PERLU event listener khusus untuk demo link lagi
-
-// ==================== SMOOTH SCROLL ====================
+// SMOOTH SCROLL
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const href = this.getAttribute('href');
@@ -127,7 +123,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ==================== TYPING ANIMATION ====================
+// TYPING ANIMATION
 const typingElement = document.querySelector('.typing-text');
 
 if (typingElement) {
@@ -164,7 +160,7 @@ if (typingElement) {
   setTimeout(typeEffect, 800);
 }
 
-// ==================== COUNTER ANIMATION ====================
+// COUNTER ANIMATION
 function animateCounter(element, target, duration = 1200) {
   const start = 0;
   const startTime = performance.now();
@@ -205,14 +201,14 @@ const metricsObserver = new IntersectionObserver((entries) => {
 const heroMetrics = document.querySelector('.hero-metrics');
 if (heroMetrics) metricsObserver.observe(heroMetrics);
 
-// ==================== LAZY LOADING ====================
+// LAZY LOADING
 if ('loading' in HTMLImageElement.prototype) {
   document.querySelectorAll('img[loading="lazy"]').forEach(img => {
     img.loading = 'lazy';
   });
 }
 
-// ==================== SMOOTH HEADER HIDE/SHOW ====================
+// SMOOTH HEADER HIDE/SHOW
 let lastScrollTop = 0;
 const scrollThreshold = 80;
 
@@ -230,5 +226,5 @@ window.addEventListener('scroll', debounce(() => {
 
 header.style.transition = 'transform 0.3s ease, background 0.3s ease';
 
-// ==================== CONSOLE GREETING ====================
-console.log('%c🚀 PTStore — Jasa Website Profesional', 'font-size: 14px; font-weight: bold; color: #6366f1;');
+// CONSOLE GREETING
+console.log('%c🚀 PT STORE — Jasa Website Profesional', 'font-size: 14px; font-weight: bold; color: #6366f1;');

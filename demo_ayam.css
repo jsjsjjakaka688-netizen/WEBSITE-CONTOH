@@ -1,4 +1,4 @@
-/* ==================== VARIABLES ==================== */
+/* VARIABLES */
 :root {
   --primary: #d4a017;
   --primary-dark: #b8860b;
@@ -23,7 +23,7 @@
   --border-radius-xl: 32px;
 }
 
-/* ==================== RESET & BASE ==================== */
+/* RESET & BASE */
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +55,7 @@ body {
   padding: 0 32px;
 }
 
-/* ==================== TYPOGRAPHY ==================== */
+/* TYPOGRAPHY */
 h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.2;
@@ -94,7 +94,7 @@ h1, h2, h3, h4 {
   margin-bottom: 60px;
 }
 
-/* ==================== HEADER ==================== */
+/* HEADER */
 .header {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
@@ -201,7 +201,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-/* ==================== FLOATING ORDER BUTTON ==================== */
+/* FLOATING ORDER BUTTON */
 .floating-order {
   position: fixed;
   bottom: 28px;
@@ -226,7 +226,7 @@ h1, h2, h3, h4 {
   background: var(--primary-dark);
 }
 
-/* ==================== HERO SECTION ==================== */
+/* HERO SECTION */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -538,7 +538,7 @@ h1, h2, h3, h4 {
   50% { transform: translateY(8px); }
 }
 
-/* ==================== MENU SECTION ==================== */
+/* MENU SECTION */
 .menu {
   padding: 100px 0;
   background: white;
@@ -654,7 +654,7 @@ h1, h2, h3, h4 {
   color: var(--secondary);
 }
 
-/* ==================== ABOUT SECTION ==================== */
+/* ABOUT SECTION */
 .about {
   padding: 100px 0;
   background: var(--bg-cream);
@@ -740,7 +740,7 @@ h1, h2, h3, h4 {
   font-size: 0.9rem;
 }
 
-/* ==================== GALLERY SECTION ==================== */
+/* GALLERY SECTION */
 .gallery {
   padding: 100px 0;
   background: white;
@@ -779,7 +779,7 @@ h1, h2, h3, h4 {
   grid-column: span 2;
 }
 
-/* ==================== TESTIMONI SECTION ==================== */
+/* TESTIMONI SECTION */
 .testimoni {
   padding: 100px 0;
   background: var(--bg-cream);
@@ -839,7 +839,7 @@ h1, h2, h3, h4 {
   font-size: 0.85rem;
 }
 
-/* ==================== ORDER SECTION ==================== */
+/* ORDER SECTION */
 .order {
   padding: 80px 0 100px;
   background: var(--secondary);
@@ -914,7 +914,7 @@ h1, h2, h3, h4 {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* ==================== FOOTER ==================== */
+/* FOOTER */
 .footer {
   background: var(--secondary);
   color: white;
@@ -1013,7 +1013,7 @@ h1, h2, h3, h4 {
   color: var(--primary);
 }
 
-/* ==================== RESPONSIVE ==================== */
+/* RESPONSIVE */
 @media (max-width: 1100px) {
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
