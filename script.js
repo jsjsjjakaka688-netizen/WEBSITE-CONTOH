@@ -68,18 +68,41 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 });
 
+// GENERATE ORDER ID (5 DIGIT RANDOM)
+function generateOrderId() {
+  const random = Math.floor(10000 + Math.random() * 90000);
+  return `PT-${random}`;
+}
+
+// FORMAT TANGGAL
+function formatTanggal() {
+  const date = new Date();
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des'];
+  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+}
+
 // WHATSAPP INTEGRATION
 const phone = '6281548282195';
 
-function waMessage(paket = '') {
-  let msg = `Halo PTStore,%0A%0ASaya tertarik dengan jasa pembuatan website profesional.`;
-  if (paket) msg += `%0A%0APaket pilihan: *${paket}*`;
-  msg += `%0A%0ABisa infokan detail dan proses selanjutnya?%0A%0ATerima kasih.`;
+function waMessage(paket = '', harga = '') {
+  const orderId = generateOrderId();
+  const tanggal = formatTanggal();
+  
+  let msg = `*PT STORE | JASA WEBSITE*%0A`;
+  msg += `━━━━━━━━━━━━━━━━━━━━%0A`;
+  msg += `📋 *ORDER ID:* *${orderId}*%0A`;
+  msg += `📅 *TANGGAL:* ${tanggal}%0A`;
+  msg += `📦 *PAKET:* ${paket}%0A`;
+  msg += `━━━━━━━━━━━━━━━━━━━━%0A%0A`;
+  msg += `📌 *NOTE PENTING:*%0A%0A`;
+  msg += `TRANSFER DP 50%25 UNTUK PROSES WEBSITE JIKA WEBSITE SUDAH JADI NANTI SAYA KASIH VIDEONYA KALAU SUKA DENGAN HASILNYA LUNASI DULU UNTUK KE TAHAP 2 (PUBLIC WEBSITE %26 DOMAIN)%0A%0A`;
+  msg += `━━━━━━━━━━━━━━━━━━━━`;
+  
   return msg;
 }
 
-function openWA(paket = '') {
-  window.open(`https://wa.me/${phone}?text=${waMessage(paket)}`, '_blank');
+function openWA(paket = '', harga = '') {
+  window.open(`https://wa.me/${phone}?text=${waMessage(paket, harga)}`, '_blank');
 }
 
 const waMainBtn = document.getElementById('waMainBtn');
@@ -104,7 +127,8 @@ document.querySelectorAll('.btn-paket').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
     const paket = btn.getAttribute('data-paket') || '';
-    openWA(paket);
+    const harga = btn.getAttribute('data-harga') || '';
+    openWA(paket, harga);
   });
 });
 
@@ -227,4 +251,4 @@ window.addEventListener('scroll', debounce(() => {
 header.style.transition = 'transform 0.3s ease, background 0.3s ease';
 
 // CONSOLE GREETING
-console.log('%c🚀 PT STORE — Jasa Website Profesional', 'font-size: 14px; font-weight: bold; color: #6366f1;');
+console.log('%c🚀 PT STORE — Jasa Website Profesional', 'font-size: 14px; font-weight: bold; color: #6366f1');
